@@ -11,7 +11,7 @@ def test():
   html = requests.get("http://www.winespectator.com/dailypicks/category/catid/1/page/").content 
   wineReviews = BeautifulSoup(html)
   lines = []
-  for page in xrange(1, 2):
+  for page in xrange(1, 10):
       for headLine in wineReviews.find_all("div", { "class" : "paragraph" }):
               txt1 = headLine.get_text()
               txt1 = re.sub('[ \t]+', ' ', txt1).strip()
