@@ -1,6 +1,5 @@
 #!/bin/python
 
-<<<<<<< HEAD
 from urllib2 import urlopen 
 from bs4 import BeautifulSoup
 import unicodedata
@@ -20,9 +19,3 @@ def test():
   with open("/home/zf/data/winereviews.txt", "w") as f:
       f.write(u'\n\n'.join(lines).encode('utf-8'))
 
-=======
-import urllib2
-import requests
-import scrapy
-from markov_python.cc_markov import MarkovChain
->>>>>>> cca82f63da4849c6ea6619ee775c9665f542b029
